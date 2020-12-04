@@ -1,0 +1,69 @@
+❯ make install 2>../make_install.log 1>&2
+MAKE x86_64-pc-linux-gnu : 0 * install
+make[1]: Entering directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu'
+Making install in include
+make[2]: Entering directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu/include'
+make[3]: Entering directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu/include'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/opt/ffi/include'
+ /usr/bin/install -c -m 644 ffi.h ffitarget.h '/opt/ffi/include'
+make[3]: Leaving directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu/include'
+make[2]: Leaving directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu/include'
+Making install in testsuite
+make[2]: Entering directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu/testsuite'
+make[3]: Entering directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu/testsuite'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu/testsuite'
+make[2]: Leaving directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu/testsuite'
+Making install in man
+make[2]: Entering directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu/man'
+make[3]: Entering directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu/man'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/opt/ffi/share/man/man3'
+ /usr/bin/install -c -m 644 ../../man/ffi.3 ../../man/ffi_call.3 ../../man/ffi_prep_cif.3 ../../man/ffi_prep_cif_var.3 '/opt/ffi/share/man/man3'
+make[3]: Leaving directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu/man'
+make[2]: Leaving directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu/man'
+Making install in doc
+make[2]: Entering directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu/doc'
+make[3]: Entering directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/opt/ffi/share/info'
+ /usr/bin/install -c -m 644 ../../doc/libffi.info '/opt/ffi/share/info'
+make[3]: Leaving directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu/doc'
+make[2]: Leaving directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu/doc'
+make[2]: Entering directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu'
+make[3]: Entering directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu'
+ /usr/bin/mkdir -p '/opt/ffi/lib/../lib'
+ /bin/bash ./libtool   --mode=install /usr/bin/install -c   libffi.la '/opt/ffi/lib/../lib'
+libtool: install: /usr/bin/install -c .libs/libffi.so.7.1.0 /opt/ffi/lib/../lib/libffi.so.7.1.0
+libtool: install: (cd /opt/ffi/lib/../lib && { ln -s -f libffi.so.7.1.0 libffi.so.7 || { rm -f libffi.so.7 && ln -s libffi.so.7.1.0 libffi.so.7; }; })
+libtool: install: (cd /opt/ffi/lib/../lib && { ln -s -f libffi.so.7.1.0 libffi.so || { rm -f libffi.so && ln -s libffi.so.7.1.0 libffi.so; }; })
+libtool: install: /usr/bin/install -c .libs/libffi.lai /opt/ffi/lib/../lib/libffi.la
+libtool: install: /usr/bin/install -c .libs/libffi.a /opt/ffi/lib/../lib/libffi.a
+libtool: install: chmod 644 /opt/ffi/lib/../lib/libffi.a
+libtool: install: ranlib /opt/ffi/lib/../lib/libffi.a
+libtool: finish: PATH="/opt/zlib/bin:/opt/valgrind/bin:/opt/sqlite/bin:/opt/shadowsocks/bin:/opt/openssl/bin:/opt/httpd/bin:/opt/expat/bin:/opt/bzip2/bin:/opt/asciidoc/bin:/opt/apr-util/bin:/opt/apr-iconv/bin:/opt/apr/bin:/root/.local/bin:/usr/games:/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin" ldconfig -n /opt/ffi/lib/../lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /opt/ffi/lib/../lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/opt/ffi/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libffi.pc '/opt/ffi/lib/pkgconfig'
+make[3]: Leaving directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu'
+make[2]: Leaving directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu'
+make[1]: Leaving directory '/opt/ffi/archive/source/libffi-3.3/x86_64-pc-linux-gnu'
